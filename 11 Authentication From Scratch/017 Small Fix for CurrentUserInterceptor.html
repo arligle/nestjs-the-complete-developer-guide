@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>017 Small Fix for CurrentUserInterceptor</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>Don't skip this note! A small fix is needed in the CurrentUserInterceptor.</p><p>Please change:</p><p><code>const { userId } = request.session;</code></p><p>To the following:</p><p><code><em>const { userId } = </em><strong><em>request.session || {};</em></strong></code> </p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

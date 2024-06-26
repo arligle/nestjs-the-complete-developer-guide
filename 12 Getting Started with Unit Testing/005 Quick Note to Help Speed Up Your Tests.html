@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>005 Quick Note to Help Speed Up Your Tests</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>You can dramatically speed up your tests by updating the package.json file.</p><p>In the scripts section, find the following line:</p><p><code><em>"test:watch": "jest --watch",</em></code></p><p>And change it to:</p><p><code><em>"test:watch": "jest --watch </em><strong><em>--maxWorkers=1",</em></strong></code></p><p>Restart your test runner at your terminal after making this change</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                
